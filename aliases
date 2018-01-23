@@ -1,0 +1,7 @@
+alias dbash='function _dbash(){ docker exec -it $1 bash; }; _dbash'
+alias dcstart='function _dcstart() { docker-compose -f stack.yml start $@; }; _dcstart'
+alias dcstop='function _dcstop() { docker-compose -f stack.yml  stop $@; }; _dcstop'
+alias rmall='docker rm $(docker ps -a -q)'
+alias sa='. ~/.aliases'
+alias showa='alias'
+
